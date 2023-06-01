@@ -1,0 +1,120 @@
+body{
+    margin: 1;
+    color :aqua;
+    background-color: #11191F;
+}
+
+.container{
+    color:coral
+}
+.contenedorLabel
+{
+    height: auto;
+    width: auto;
+}
+.box {   
+    float: left;
+    width: 307px;
+    height: 700px;
+    background-color: #11191F;
+    margin-right: 10px;
+    margin-right: 100px;
+}
+
+.containerdebotones{
+    display: flex 1;
+    padding: 10px;
+    margin-top: 10px;
+    border: 5px #11191F;
+    
+}
+
+.boton{
+    display: inline-block;
+    margin-right: 10px;
+    
+}
+
+.selected {
+    background-color: yellow !important;
+}
+
+
+
+#myList {
+    list-style-type: none;
+    padding: 0;
+}
+
+#myList li {
+    cursor: pointer;
+    padding: 5px;
+}
+
+#myList li.selected {
+    background-color: yellow;
+}
+
+.boxEvent{
+    min-width: 300px;
+    
+}
+
+/*                               ROBO TOTAL Y DESCADO ESTAS AVISAOD ES SOLO ESTILO POR AHORA   JIJI                              */
+
+
+
+
+/*                              ROBO TOTAL Y DESCADO ESTAS AVISAOD ES SOLO BUTTOM POR AHORA                                           */
+
+
+
+button {
+margin: 0; 
+overflow: visible; 
+font-family: inherit; 
+text-transform: none; 
+}
+
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+-webkit-appearance: button;
+}
+
+button {
+display: block;
+width: 100%;
+margin-bottom: var(--spacing);
+}
+
+[role="button"] {
+display: inline-block;
+text-decoration: none;
+}
+
+button,
+input[type="submit"],
+input[type="button"],
+input[type="reset"],
+[role="button"] {
+--background-color: var(--primary);
+--border-color: var(--primary);
+--color: var(--primary-inverse);
+--box-shadow: var(--button-box-shadow, 0 0 0 rgba(0, 0, 0, 0));
+padding: var(--form-element-spacing-vertical)
+    var(--form-element-spacing-horizontal);
+border: var(--border-width) solid var(--border-color);
+border-radius: var(--border-radius);
+outline: none;
+background-color: var(--background-color);
+box-shadow: var(--box-shadow);
+color: var(--color);
+font-weight: var(--font-weight);
+font-size: 1rem;
+line-height: var(--line-height);
+text-align: center;
+cursor: pointer;
+
+}
