@@ -31,19 +31,19 @@ guardarLibroBtn.addEventListener("click", guardarLibro)
 function guardarLibro(){
     let tituloValor = tituloInput.value;
     localStorage.setItem("tituloGuardado", tituloValor)
-    tituloOutput.textContent = `Titulo ${tituloValor}guardado en el Local Storage`
+    tituloOutput.textContent = `Titulo ${tituloValor} guardado en el Local Storage`
 
     let autorValor = autorInput.value;
     localStorage.setItem("autorGuardado", autorValor)
-    autorOutput.textContent = `Autor ${autorValor}guardado en el Local Storage`
+    autorOutput.textContent = `Autor ${autorValor} guardado en el Local Storage`
 
     let precioValor = precioInput.value;
     localStorage.setItem("precioGuardado", precioValor)
-    precioOutput.textContent = `Precio ${precioValor}guardado en el Local Storage`
+    precioOutput.textContent = `Precio ${precioValor} guardado en el Local Storage`
 
     let anioValor = anioInput.value;
     localStorage.setItem("anioGuardado", anioValor)
-    anioOutput.textContent = `Año ${anioValor}guardado en el Local Storage`
+    anioOutput.textContent = `Año ${anioValor} guardado en el Local Storage`
 
 /*    let libroCreado = new Libros(estanteria.length+1,autorInput.value,tituloInput.value,anioInput.value,precioInput.value)
     console.log("libro creado")
