@@ -1,6 +1,8 @@
 
 let estanteria = []
 
+
+
 let tituloInput = document.getElementById("tituloInput")
 let tituloOutput = document.getElementById("tituloOutput")
 let autorInput = document.getElementById("autorInput")
@@ -9,15 +11,7 @@ let precioInput = document.getElementById("precioInput")
 let precioOutput = document.getElementById("precioOutput")
 let anioInput = document.getElementById("anioInput")
 let anioOutput = document.getElementById("anioOutput")
-
-if(localStorage.getItem("estanteria")){
-    estanteria = JSON.parse(localStorage.getItem("estanteria"))
-    console.log(estanteria)
-}else{
-    estanteria.push
-    localStorage.setItem("estanteria", JSON.stringify(estanteria))
-}
-console.log(estanteria)
+ 
 
 
 let guardarLibroBtn = document.getElementById("guardarLibroBtn")
@@ -44,6 +38,26 @@ function guardarLibro(){
     let anioValor = anioInput.value;
     localStorage.setItem("anioGuardado", anioValor)
     anioOutput.textContent = `Año ${anioValor} guardado en el Local Storage`
+
+    let libro = {
+        titulo: tituloValor,
+        autor: autorValor,
+        precio: precioValor,
+        anio: anioValor
+    } 
+
+    let libros = JSON.parse(localStorage.getItem("libros")) || []
+
+    libros.push(libro)
+
+    localStorage.setItem("libros", JSON.stringify(libros));
+
+    libroInputeado.textContent = "Libro correctamente imputeado en el Local Storage"
+
+    document.getElementById("tituloInput").value = "";
+    document.getElementById("autorInput").value = "";
+    document.getElementById("precioInput").value = "";
+    document.getElementById("anioInput").value = "";
 
 /*    let libroCreado = new Libros(estanteria.length+1,autorInput.value,tituloInput.value,anioInput.value,precioInput.value)
     console.log("libro creado")
