@@ -1,20 +1,4 @@
 
-
-
-class Libros{
-    constructor(id,titulo,autor,precio,año){
-    this.id = id,
-    this.titulo = titulo,
-    this.autor = autor,
-    this.precio = precio,
-    this.año = año
-    
-}
-    mostrarDatos(){
-        console.log(`El id es = ${this.id}, su libro es ${this.titulo}, su autor es ${this.autor}, su precio es ${this.precio}, su año es ${this.año}`)
-    }
-}
-
 let estanteria = []
 
 let tituloInput = document.getElementById("tituloInput")

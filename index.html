@@ -14,6 +14,26 @@
 
     <main class="container">
         <div class="box">
+            <ul  id="myList">
+                <li>Elemento 1</li>
+                <li>Elemento 2</li>
+                <li>Elemento 3</li>
+                <li>Elemento 4</li>
+                <li>Elemento 5</li>
+            </ul>
+            <ul class="containerdebotones">
+            <button class="boton" type="button" id="nuevoLibroBtn">
+                    NUEVO
+            </button>
+            <button class="boton" type="button" id="editarLibroBtn">
+                    EDITAR
+            </button>
+            <button class="boton" type="button" id="eliminarLibroBtn">
+                    ELIMINAR
+            </button>
+            </ul>
+        </div>
+        <div class="box">
             <p>Su numero de ID ES :</p>
             <div class="contenedorLabel">
                 <div>
@@ -22,7 +42,7 @@
             </label>
             <input id ="tituloInput" class ="boxEvent" type="text"
             placeholder="Justo aqui debes ingresar">
-            <label id="tituloOutput" ></label>
+            <label id="tituloOutput" class="nuevoDato" ></label>
         </div>
             <div>
             <label>
@@ -30,7 +50,7 @@
             </label>
             <input id ="autorInput" class ="boxEvent" type="text"
             placeholder="Justo aqui debes ingresar">
-            <label id="autorOutput" ></label>
+            <label id="autorOutput" class="nuevoDato" ></label>
         </div>
             <label >
                 Ingrese el precio de la obra
@@ -38,7 +58,7 @@
             <div>
             <input id ="precioInput" class ="boxEvent" type="text"
             placeholder="Justo aqui debes ingresar">
-            <label id="precioOutput" ></label>
+            <label id="precioOutput" class="nuevoDato" ></label>
         </div>
             <label >
                 Ingrese el año de la obra 
@@ -46,7 +66,7 @@
             <div>
             <input id ="anioInput" class ="boxEvent" type="text"
             placeholder="Justo aqui debes ingresar">
-            <label id="anioOutput" ></label>
+            <label id="anioOutput" class="nuevoDato" ></label>
         </div>
             <label class="containerdebotones">
             </div>
@@ -58,15 +78,7 @@
         </label>
             
     </div>
-        <div class="box">
-        <ul  id="myList">
-            <li id="tituloOutput"></li>
-            <li>Elemento 2</li>
-            <li>Elemento 3</li>
-            <li>Elemento 4</li>
-            <li>Elemento 5</li>
-        </ul>
-    </div>
+
     </main>
 
 
